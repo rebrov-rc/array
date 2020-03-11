@@ -1,0 +1,28 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 240, 240);
+
+}
+.page{
+    width: 1170px;
+    min-height: 100vh;
+    // 
+    margin: auto;
+    // 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // 
+    background-color: #fff;
+}
+
+.out{
+    border: solid rgb(194, 194, 194);
+    // 
+    min-height: 20vh;
+    min-width: 20vw;
+}
