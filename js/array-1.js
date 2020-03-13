@@ -8,7 +8,10 @@
 // arr[0] <=> arr[2]
 // arr[1] <=> arr[3]
 
-let arr11 = [1, 2, 3, 4,5,6], b11, c11, d11;
+
+// ЧЁТНЫЕ
+
+let arr11 = [1, 2, 3, 4, 5, 6], b11, c11, d11;
 
 console.log(arr11);
 console.log('=====================');
@@ -25,9 +28,25 @@ for (let i = 0; i <= c11 - 1; i++) {
     console.log(i);
 }
 // ======================================
+// НЕЧЁТНЫЕ
+let arr12 = [1, 2, 3, 4, 5, 6, 7], b12, c12, d12;
 
 
+console.log('=====================');
 
+c12 = arr12.length / 2;
+c12 = Math.floor(c12)
+for (let i = 0; i <= c12 - 1; i++) {
+    b12 = i + c12 + 1;
+    d12 = arr12[i];
+    arr12[i] = arr12[b12];
+    arr12[b12] = d12;
+
+    console.log(arr12);
+    console.log(i);
+}
+
+console.log('=====================');
 
 
 
