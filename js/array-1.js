@@ -5,6 +5,32 @@
 // на своём месте: 4 5 3 1 2
 
 
+// arr[0] <=> arr[2]
+// arr[1] <=> arr[3]
+
+let arr11 = [1, 2, 3, 4,5,6], b11, c11, d11;
+
+console.log(arr11);
+console.log('=====================');
+
+c11 = arr11.length / 2;
+
+for (let i = 0; i <= c11 - 1; i++) {
+    b11 = i + c11;
+    d11 = arr11[i];
+    arr11[i] = arr11[b11];
+    arr11[b11] = d11;
+
+    console.log(arr11);
+    console.log(i);
+}
+// ======================================
+
+
+
+
+
+
 let a1 = [1, 2, 3, 4], b1;
 
 console.log(a1);
