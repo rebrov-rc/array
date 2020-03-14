@@ -5,72 +5,107 @@
 // на своём месте: 4 5 3 1 2
 
 
+
+// Меняе чётные и нечётные числа!
+
+let aa = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], 
+aa1, bb = 0, cc = 0, dd = 0;
+cc = aa.length%2;
+aa1 = Math.floor(aa.length / 2);
+
+// console.log(cc);
+for ( let i = 0; i < aa1 ;i++ ) {
+    bb = i + aa1 + cc;
+    dd = aa[i];
+    aa[i] = aa[bb];
+    aa[bb] = dd;
+
+    console.log(aa);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // arr[0] <=> arr[2]
 // arr[1] <=> arr[3]
 
 
 // ЧЁТНЫЕ
 
-let arr11 = [1, 2, 3, 4, 5, 6], b11, c11, d11;
+// let arr11 = [1, 2, 3, 4, 5, 6], b11, c11, d11;
 
-console.log(arr11);
-console.log('=====================');
+// console.log(arr11);
+// console.log('=====================');
 
-c11 = arr11.length / 2;
+// c11 = arr11.length / 2;
 
-for (let i = 0; i <= c11 - 1; i++) {
-    b11 = i + c11;
-    d11 = arr11[i];
-    arr11[i] = arr11[b11];
-    arr11[b11] = d11;
+// for (let i = 0; i <= c11 - 1; i++) {
+//     b11 = i + c11;
+//     d11 = arr11[i];
+//     arr11[i] = arr11[b11];
+//     arr11[b11] = d11;
 
-    console.log(arr11);
-    console.log(i);
-}
-// ======================================
-// НЕЧЁТНЫЕ
-let arr12 = [1, 2, 3, 4, 5, 6, 7], b12, c12, d12;
-
-
-console.log('=====================');
-
-c12 = arr12.length / 2;
-c12 = Math.floor(c12)
-for (let i = 0; i <= c12 - 1; i++) {
-    b12 = i + c12 + 1;
-    d12 = arr12[i];
-    arr12[i] = arr12[b12];
-    arr12[b12] = d12;
-
-    console.log(arr12);
-    console.log(i);
-}
-
-console.log('=====================');
+//     console.log(arr11);
+//     console.log(i);
+// }
+// // ======================================
+// // НЕЧЁТНЫЕ
+// let arr12 = [1, 2, 3, 4, 5, 6, 7], b12, c12, d12;
 
 
+// console.log('=====================');
 
-let a1 = [1, 2, 3, 4], b1;
+// c12 = arr12.length / 2;
+// c12 = Math.floor(c12)
+// for (let i = 0; i <= c12 - 1; i++) {
+//     b12 = i + c12 + 1;
+//     d12 = arr12[i];
+//     arr12[i] = arr12[b12];
+//     arr12[b12] = d12;
 
-console.log(a1);
+//     console.log(arr12);
+//     console.log(i);
+// }
 
-b1 = [a1[0],a1[1]];
+// console.log('=====================');
 
-[a1[0], a1[1]] = [a1[2], a1[3]];
 
-[a1[2], a1[3]] = b1;
 
-console.log(a1);
-console.log('//===========================>')
-console.log('Второй вариант:')
+// let a1 = [1, 2, 3, 4], b1;
 
-let aa1 = [1, 2, 3, 4, 5], bb1;
-bb1 = aa1[0];
-aa1[0] = aa1[3];
-aa1[3] = bb1;
-bb1 = aa1[1];
-aa1[1] = aa1[4];
-aa1[4] = bb1;
+// console.log(a1);
 
-console.log(aa1)
-console.log('//===========================>')
+// b1 = [a1[0],a1[1]];
+
+// [a1[0], a1[1]] = [a1[2], a1[3]];
+
+// [a1[2], a1[3]] = b1;
+
+// console.log(a1);
+// console.log('//===========================>')
+// console.log('Второй вариант:')
+
+// let aa1 = [1, 2, 3, 4, 5], bb1;
+// bb1 = aa1[0];
+// aa1[0] = aa1[3];
+// aa1[3] = bb1;
+// bb1 = aa1[1];
+// aa1[1] = aa1[4];
+// aa1[4] = bb1;
+
+// console.log(aa1)
+// console.log('//===========================>')
